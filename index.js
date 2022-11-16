@@ -29,7 +29,7 @@ const start = () => {
             await bot.sendMessage(chatId,'Для регистрации заполни форму', {
                 reply_markup: {
                     keyboard: [
-                        [{text: 'Заполни форму', web_app: {url: WebAppUrl + '/form'}}]
+                        [{text: 'Заполни форму', web_app: {url: WebAppUrl + 'form'}}]
                     ]
                 }
             })
