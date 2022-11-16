@@ -17,7 +17,7 @@ const start = () => {
         const text = msg.text;
 
 
-        if (text==='/start') {
+        if (text==='/start'){
             await bot.sendMessage(chatId,'Интернет-магазин', {
                 reply_markup: {
                     inline_keyboard: [
