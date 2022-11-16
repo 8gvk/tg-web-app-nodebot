@@ -1,7 +1,7 @@
 const TelegramBot = require('node-telegram-bot-api');
 
 const token = '5702702395:AAGp8BJMsKJ_c4FYUVZc_Cy-wvoSjJBe2gM';
-const WebAppUrl = 'https://comfy-sawine-cee12e.netlify.app/';
+const WebAppUrl = 'https://comfy-sawine-cee12e.netlify.app';
 const bot = new TelegramBot(token, {polling: true});
 
 
@@ -29,7 +29,7 @@ const start = () => {
             await bot.sendMessage(chatId,'Для регистрации заполни форму', {
                 reply_markup: {
                     keyboard: [
-                        [{text: 'Заполни форму', web_app: {url: WebAppUrl + 'form'}}]
+                        [{text: 'Заполни форму', web_app: {url: WebAppUrl + '/form'}}]
                     ]
                 }
             })
